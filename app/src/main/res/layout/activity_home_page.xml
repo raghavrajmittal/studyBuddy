@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/testButton">
+    android:id="@+id/testButton"
+    android:orientation="vertical">
 
     <Button
         android:text="Log In"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/login"
-        android:onClick="login"/>
+        android:id="@+id/login" >
+    </Button>
 
     <Button
         android:text="Sign Up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signup" />
+        android:id="@+id/signup" >
+    </Button>
 
 </LinearLayout>
