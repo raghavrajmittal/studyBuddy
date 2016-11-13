@@ -8,13 +8,13 @@
         android:text="Log In"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/login" >
-    </Button>
+        android:id="@+id/login"
+        android:onClick="login"/>
+
     <Button
         android:text="Sign Up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signup" >
-    </Button>
+        android:id="@+id/signup" />
 
 </LinearLayout>

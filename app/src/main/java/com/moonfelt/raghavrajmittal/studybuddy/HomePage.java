@@ -1,5 +1,6 @@
 package com.moonfelt.raghavrajmittal.studybuddy;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -19,11 +20,14 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBar.Tab;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.widget.EditText;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
+
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 
 public class HomePage extends AppCompatActivity {
@@ -87,8 +91,14 @@ public class HomePage extends AppCompatActivity {
     /**
      * Called when the user clicks the Send button
      */
-    public void sendMessage(View view) {
-        // Do something in response to button
+    public void login(View view) {
+        Button next = (Button) findViewById(R.id.login);
+        next.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), Buddy.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
     }
 
     /**
@@ -127,3 +137,4 @@ public class HomePage extends AppCompatActivity {
         client.disconnect();
     }
 }
+
