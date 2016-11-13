@@ -59,6 +59,8 @@ public class HomePage extends AppCompatActivity {
 //        });
 
         Button login = (Button) findViewById(R.id.login);
+        Button signUp = (Button) findViewById(R.id.signup);
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,6 +73,14 @@ public class HomePage extends AppCompatActivity {
                     Toast.makeText(HomePage.this, "Wrong Creds", Toast.LENGTH_SHORT).show();
                 //    throw new java.util.NoSuchElementException("Wrong credentials");
                 }
+            }
+        });
+
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomePage.this, SignUp.class);
+                startActivity(intent);
             }
         });
 //        // ATTENTION: This was auto-generated to implement the App Indexing API.

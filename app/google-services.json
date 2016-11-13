@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "271284551082",
+    "firebase_url": "https://studybuddy-92dee.firebaseio.com",
+    "project_id": "studybuddy-92dee",
+    "storage_bucket": "studybuddy-92dee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271284551082:android:ba41a41bf36b52af",
+        "android_client_info": {
+          "package_name": "com.moonfelt.raghavrajmittal.studybuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271284551082-l5fppt1ab5pt9nvsq7ufvmsj2j0ojc6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfFzSTRUo_bsWTkZYjJn98D08ZhLOeYYo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
