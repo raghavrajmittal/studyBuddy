@@ -21,6 +21,7 @@ import android.support.v7.app.ActionBar.Tab;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -67,9 +68,9 @@ public class HomePage extends AppCompatActivity {
                     Intent intent = new Intent(HomePage.this,Buddy.class);
                     startActivity(intent);
                 }else{
-                    throw new java.util.NoSuchElementException("Wrong credentials");
+                    Toast.makeText(HomePage.this, "Wrong Creds", Toast.LENGTH_SHORT).show();
+                //    throw new java.util.NoSuchElementException("Wrong credentials");
                 }
-
             }
         });
 //        // ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -147,4 +148,5 @@ public class HomePage extends AppCompatActivity {
 //        AppIndex.AppIndexApi.end(client, getIndexApiAction());
 //        client.disconnect();
 //    }
+
 }
