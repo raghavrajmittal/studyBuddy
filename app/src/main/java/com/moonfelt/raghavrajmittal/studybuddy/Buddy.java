@@ -23,3 +23,4 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 public class Buddy {
 }
+
