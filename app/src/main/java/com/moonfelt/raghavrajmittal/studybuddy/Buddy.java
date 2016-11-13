@@ -1,8 +1,10 @@
 package com.moonfelt.raghavrajmittal.studybuddy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabItem;
 import android.support.v7.widget.ButtonBarLayout;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -16,6 +18,7 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TabHost;
 import android.widget.TextView;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBar.Tab;
@@ -30,14 +33,16 @@ public class Buddy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buddy);
 
-        //Intent intent = getIntent();
-        //String message = intent.getStringExtra(HomePage.EXTRA_MESSAGE);
-        //TextView textView = new TextView(this);
-        //textView.setTextSize(40);
-        //textView.setText(message);
+        Button chat = (Button) findViewById(R.id.chatTab);
 
-        //ViewGroup layout = (ViewGroup) findViewById(R.id.activity_buddy);
-        //layout.addView(textView);
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Buddy.this, Chat.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

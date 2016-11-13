@@ -36,6 +36,22 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".Chat"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--<activity-->
+            <!--android:name=".ChatArrayAdapter"-->
+            <!--android:theme="@style/AppTheme.NoActionBar">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.DEFAULT" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
 
         <meta-data
             android:name="com.google.android.gms.version"
