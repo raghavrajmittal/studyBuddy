@@ -19,6 +19,7 @@ public class Chat extends AppCompatActivity {
     private ListView listView;
     private EditText chatText;
     private Button buttonSend;
+
     private boolean side = false;
 
     @Override
