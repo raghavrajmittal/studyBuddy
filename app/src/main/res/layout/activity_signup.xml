@@ -10,7 +10,7 @@
         android:inputType="textPersonName"
         android:hint=" First Name"
         android:ems="10"
-        android:layout_margin="30dp"
+        android:layout_margin="25dp"
         android:id="@+id/firstname" />
 
     <EditText
@@ -19,7 +19,7 @@
         android:inputType="textPersonName"
         android:hint="Last Name"
         android:ems="10"
-        android:layout_margin="30dp"
+        android:layout_margin="25dp"
         android:id="@+id/lastname" />
 
     <EditText
@@ -28,7 +28,7 @@
         android:inputType="textPersonName"
         android:hint="Mobile Number"
         android:ems="10"
-        android:layout_margin="30dp"
+        android:layout_margin="25dp"
         android:id="@+id/editText6" />
 
     <EditText
@@ -37,7 +37,7 @@
         android:inputType="textPersonName"
         android:hint="GT ID"
         android:ems="10"
-        android:layout_margin="30dp"
+        android:layout_margin="25dp"
         android:id="@+id/gtid" />
 
     <EditText
@@ -45,7 +45,15 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:layout_margin="30dp"
+        android:layout_margin="25dp"
         android:hint="Password"
         android:id="@+id/password" />
+
+    <Button
+        android:text="Sign Up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign"
+        android:layout_weight="0.10" />
+
 </LinearLayout>
