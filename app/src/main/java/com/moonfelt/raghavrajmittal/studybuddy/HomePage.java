@@ -56,9 +56,9 @@ public class HomePage extends AppCompatActivity {
 
         Button login = (Button) findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View view) {
-                // TODO what happens when the button is click
+                Intent myIntent = new Intent(HomePage.this, Buddy.class);
+                startActivity(myIntent);
             }
         });
         // ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -96,7 +96,7 @@ public class HomePage extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), Buddy.class);
-                startActivityForResult(myIntent, 0);
+                startActivity(myIntent);
             }
         });
     }
