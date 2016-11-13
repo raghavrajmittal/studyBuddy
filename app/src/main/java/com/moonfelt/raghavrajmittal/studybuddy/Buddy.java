@@ -39,5 +39,7 @@ public class Buddy extends AppCompatActivity {
         //ViewGroup layout = (ViewGroup) findViewById(R.id.activity_buddy);
         //layout.addView(textView);
     }
+
+
 }
 

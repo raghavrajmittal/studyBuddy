@@ -27,6 +27,8 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import java.util.NoSuchElementException;
+
 import static android.R.attr.action;
 
 
@@ -59,14 +61,22 @@ public class HomePage extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomePage.this,Buddy.class);
-                startActivity(intent);
+                EditText username = (EditText)findViewById(R.id.name);
+                EditText password = (EditText)findViewById(R.id.pass);
+                if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
+                    Intent intent = new Intent(HomePage.this,Buddy.class);
+                    startActivity(intent);
+                }else{
+                    throw new java.util.NoSuchElementException("Wrong credentials");
+                }
+
             }
         });
 //        // ATTENTION: This was auto-generated to implement the App Indexing API.
 //        // See https://g.co/AppIndexing/AndroidStudio for more information.
 //        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
+
 
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
@@ -93,13 +103,13 @@ public class HomePage extends AppCompatActivity {
     /**
      * Called when the user clicks the Send button
      */
-    public void sendMessage(View view) {
-        Intent intent = new Intent(this, Buddy.class);
-//        EditText editText = (EditText) findViewById(R.id.edit_message);
-//        String message = editText.getText().toString();
-//        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
-    }
+    //public void sendMessage(View view) {
+//        Intent intent = new Intent(this, Buddy.class);
+////        EditText editText = (EditText) findViewById(R.id.edit_message);
+////        String message = editText.getText().toString();
+////        intent.putExtra(EXTRA_MESSAGE, message);
+//        startActivity(intent);
+//    }
 
 
     /**
