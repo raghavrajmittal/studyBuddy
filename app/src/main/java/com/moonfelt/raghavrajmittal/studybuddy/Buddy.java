@@ -1,4 +1,4 @@
-package Buddy;
+package com.moonfelt.raghavrajmittal.studybuddy;
 
 /**
  * Created by Nihal on 11/13/2016.
